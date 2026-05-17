@@ -57,6 +57,7 @@ const sampleTable = initTable({
     after: ['pagination']
 }, render);
 
+
 // @todo: инициализация
 const applySearching = initSearching('search');
 const applySorting = initSorting([        // Нам нужно передать сюда массив элементов, которые вызывают сортировку, чтобы изменять их визуальное представление
