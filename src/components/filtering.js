@@ -19,7 +19,7 @@ export function initFiltering(elements, indexes) {
                                     return el;                            // @todo: создать и вернуть тег опции
                         })
             )
-     })
+        })
     }
     const applyFiltering = (query, state, action) => {
         // @todo: #4.2 — обработать очистку поля

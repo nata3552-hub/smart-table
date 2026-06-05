@@ -14,10 +14,10 @@ export function initSorting(columns) {
 
             // @todo: #3.2 — сбросить сортировки остальных колонок
             columns.forEach(column => {                                    // Перебираем элементы (в columns у нас массив кнопок)
-            if (column.dataset.field !== action.dataset.field) {    // Если это не та кнопка, что нажал пользователь
-                column.dataset.value = 'none';                        // тогда сбрасываем её в начальное состояние
-            }
-        });
+                if (column.dataset.field !== action.dataset.field) {    // Если это не та кнопка, что нажал пользователь
+                    column.dataset.value = 'none';                        // тогда сбрасываем её в начальное состояние
+                }
+            });
         } else {
             // @todo: #3.3 — получить выбранный режим сортировки
             columns.forEach(column => {                        // Перебираем все наши кнопки сортировки
